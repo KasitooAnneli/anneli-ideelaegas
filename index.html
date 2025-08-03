@@ -270,10 +270,19 @@
 </section>
 
 <!-- Lightbox Modal -->
+<!-- Lightbox Modal -->
 <div id="lightbox-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
   <span onclick="closeLightbox()" style="position:absolute;top:30px;right:40px;color:#fff;font-size:40px;cursor:pointer;z-index:1001;">&times;</span>
+  
+  <!-- Left arrow -->
+  <span id="lightbox-prev" onclick="prevImage()" style="position:absolute;left:30px;color:#fff;font-size:50px;cursor:pointer;z-index:1001;">&#10094;</span>
+
+  <!-- Right arrow -->
+  <span id="lightbox-next" onclick="nextImage()" style="position:absolute;right:30px;color:#fff;font-size:50px;cursor:pointer;z-index:1001;">&#10095;</span>
+  
   <img id="lightbox-img" src="" alt="" style="max-width:90vw; max-height:80vh; display:block; margin:auto; box-shadow:0 2px 20px #111;">
 </div>
+
 
 <script>
 function showSection(sectionId) {
@@ -337,3 +346,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
