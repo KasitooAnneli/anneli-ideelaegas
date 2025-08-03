@@ -285,47 +285,82 @@
 
 
 <script>
+let lightboxImages = [];
+let currentLightboxIndex = -1;
+
+// Show/hide sections
 function showSection(sectionId) {
-  // Hide all sections
   document.getElementById('avaleht').style.display = 'none';
   document.getElementById('tood').style.display = 'none';
   document.getElementById('tellimine').style.display = 'none';
-  // Show selected section
   document.getElementById(sectionId).style.display = '';
-  // If opening "Tehtud tööd", show the first gallery by default
   if (sectionId === 'tood') {
     showGallery('pudelid', document.querySelector('.submenu button'));
   }
   window.location.hash = sectionId;
 }
 
+// Gallery switching
 function showGallery(galleryId, btn) {
-  // Hide all galleries
   document.querySelectorAll('.gallery-category').forEach(cat => cat.classList.remove('active'));
-  // Show selected gallery
   document.getElementById(galleryId).classList.add('active');
-  // Update submenu active button
   document.querySelectorAll('.submenu button').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
 }
 
-// Lightbox functions
+// Open lightbox and prepare image list for navigation
 function openLightbox(img) {
+  const activeCategory = img.closest('.gallery-category');
+  if (activeCategory) {
+    // Only images in current gallery category
+    lightboxImages = Array.from(activeCategory.querySelectorAll('img'));
+  } else {
+    // Fallback: all images in general gallery
+    lightboxImages = Array.from(document.querySelectorAll('.gallery img'));
+  }
+  currentLightboxIndex = lightboxImages.findIndex(i => i.src === img.src);
+  showLightboxImage(currentLightboxIndex);
+
   var modal = document.getElementById('lightbox-modal');
-  var modalImg = document.getElementById('lightbox-img');
-  modalImg.src = img.src;
-  modalImg.alt = img.alt;
   modal.style.display = 'flex';
 }
-function closeLightbox() {
-  var modal = document.getElementById('lightbox-modal');
-  modal.style.display = 'none';
+
+// Show image by index
+function showLightboxImage(idx) {
+  if (!lightboxImages.length) return;
+  currentLightboxIndex = (idx + lightboxImages.length) % lightboxImages.length;
+  var modalImg = document.getElementById('lightbox-img');
+  modalImg.src = lightboxImages[currentLightboxIndex].src;
+  modalImg.alt = lightboxImages[currentLightboxIndex].alt;
 }
+
+// Next/prev controls
+function nextImage() {
+  showLightboxImage(currentLightboxIndex + 1);
+}
+function prevImage() {
+  showLightboxImage(currentLightboxIndex - 1);
+}
+function closeLightbox() {
+  document.getElementById('lightbox-modal').style.display = 'none';
+}
+
+// Close when clicking on modal background
 document.getElementById('lightbox-modal').addEventListener('click', function(e) {
   if (e.target === this) closeLightbox();
 });
 
-// Show section based on hash on load
+// Keyboard navigation support
+document.addEventListener('keydown', function(event) {
+  var modal = document.getElementById('lightbox-modal');
+  if (modal.style.display === 'flex') {
+    if (event.key === "ArrowRight") nextImage();
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "Escape") closeLightbox();
+  }
+});
+
+// Show correct section on load (hash)
 window.addEventListener('DOMContentLoaded', () => {
   const hash = window.location.hash.replace('#', '');
   if (hash === 'tood' || hash === 'tellimine') {
@@ -346,4 +381,5 @@ window.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
+
 
