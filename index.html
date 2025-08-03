@@ -121,6 +121,32 @@
   </div>
 </div>
 
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+  <span onclick="closeLightbox()" style="position:absolute;top:30px;right:40px;color:#fff;font-size:40px;cursor:pointer;z-index:1001;">&times;</span>
+  <img id="lightbox-img" src="" alt="" style="max-width:90vw; max-height:80vh; display:block; margin:auto; box-shadow:0 2px 20px #111;">
+</div>
+
+<script>
+function openLightbox(img) {
+  var modal = document.getElementById('lightbox-modal');
+  var modalImg = document.getElementById('lightbox-img');
+  modalImg.src = img.src;
+  modalImg.alt = img.alt;
+  modal.style.display = 'flex';
+}
+
+function closeLightbox() {
+  var modal = document.getElementById('lightbox-modal');
+  modal.style.display = 'none';
+}
+
+// Optional: allow closing by clicking outside the image
+document.getElementById('lightbox-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+</script>
+
   <div class="gallery-category">
     <h3>Kaardid</h3>
     <div class="gallery">
@@ -155,6 +181,7 @@
 
 </body>
 </html>
+
 
 
 
