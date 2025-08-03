@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Anneli ideelaegas</title>
-    
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQ4WXQHPPJ"></script>
   <script>
@@ -58,7 +58,6 @@
       justify-content: center;
       gap: 20px;
       margin: 24px 0 8px 0;
-      flex-wrap: wrap;
     }
     .submenu button {
       background: #f0e0d6;
@@ -95,11 +94,6 @@
       height: auto;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
     }
     .contact {
       background-color: #f0e0d6;
@@ -113,27 +107,6 @@
     a {
       color: #5b3a29;
       text-decoration: none;
-    }
-    
-    /* Lightbox styles */
-    #lightbox-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-      cursor: pointer;
-    }
-    #lightbox-overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 10px;
-      box-shadow: 0 0 25px white;
     }
   </style>
 </head>
@@ -221,120 +194,206 @@
       <div class="image-container"><img src="pudel8.jpg" alt="Pudel 8" onclick="openLightbox(this)"></div>
       <div class="image-container"><img src="pudel9.jpg" alt="Pudel 9" onclick="openLightbox(this)"></div>
       <div class="image-container"><img src="pudel10.jpg" alt="Pudel 10" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="pudel11.jpg" alt="Pudel 11" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="pudel12.jpg" alt="Pudel 12" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="pudel15.jpg" alt="Pudel 15" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="pudel16.jpg" alt="Pudel 16" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="pudel17.jpg" alt="Pudel 17" onclick="openLightbox(this)"></div>
     </div>
   </div>
 
   <div id="sokolaadid" class="gallery-category">
     <h3>Šokolaadiümbrised</h3>
     <div class="gallery">
-      <img src="kaart1.jpg" alt="Šokolaad ümbris 1" onclick="openLightbox(this)">
-      <img src="kaart2.jpg" alt="Šokolaad ümbris 2" onclick="openLightbox(this)">
-      <img src="kaart3.jpg" alt="Šokolaad ümbris 3" onclick="openLightbox(this)">
+      <div class="image-container"><img src="kaart1.jpg" alt="Käsitöökaart 1" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart2.jpg" alt="Käsitöökaart 2" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart3.jpg" alt="Käsitöökaart 3" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart4.jpg" alt="Käsitöökaart 4" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart5.jpg" alt="Käsitöökaart 5" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart6.jpg" alt="Käsitöökaart 6" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart7.jpg" alt="Käsitöökaart 7" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kaart8.jpg" alt="Käsitöökaart 8" onclick="openLightbox(this)"></div>
     </div>
   </div>
 
   <div id="kaardid" class="gallery-category">
     <h3>Kaardid</h3>
     <div class="gallery">
-      <img src="rahakaart1.jpg" alt="Kaart 1" onclick="openLightbox(this)">
-      <img src="rahakaart2.jpg" alt="Kaart 2" onclick="openLightbox(this)">
-      <img src="rahakaart3.jpg" alt="Kaart 3" onclick="openLightbox(this)">
-      <img src="rahakaart4.jpg" alt="Kaart 4" onclick="openLightbox(this)">
+      <div class="image-container"><img src="rahakaart1.jpg" alt="rahakaart 1" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="rahakaart2.jpg" alt="rahakaart 2" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="rahakaart3.jpg" alt="rahakaart 3" onclick="openLightbox(this)"></div>
     </div>
   </div>
 
   <div id="kommipuud" class="gallery-category">
     <h3>Kommipuud</h3>
     <div class="gallery">
-      <img src="puu1.jpg" alt="Kommipuu 1" onclick="openLightbox(this)">
-      <img src="puu2.jpg" alt="Kommipuu 2" onclick="openLightbox(this)">
-      <img src="puu3.jpg" alt="Kommipuu 3" onclick="openLightbox(this)">
+      <div class="image-container"><img src="puu1.jpg" alt="puu 1" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="puu2.jpg" alt="puu 2" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="puu3.jpg" alt="puu 3" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="puu4.jpg" alt="puu 4" onclick="openLightbox(this)"></div>
     </div>
   </div>
 
   <div id="muu" class="gallery-category">
     <h3>Muu</h3>
     <div class="gallery">
-      <img src="muu1.jpg" alt="Muu 1" onclick="openLightbox(this)">
-      <img src="muu2.jpg" alt="Muu 2" onclick="openLightbox(this)">
+      <div class="image-container"><img src="muu1.jpg" alt="Muu 1" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu2.jpg" alt="Muu 2" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu3.jpg" alt="Muu 3" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu4.jpg" alt="Muu 4" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu5.jpg" alt="Muu 5" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu6.jpg" alt="Muu 6" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu7.jpg" alt="Muu 7" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu8.jpg" alt="Muu 8" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu10.jpg" alt="Muu 10" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu11.jpg" alt="Muu 11" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu12.jpg" alt="Muu 12" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu13.jpg" alt="Muu 13" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu14.jpg" alt="Muu 14" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu15.jpg" alt="Muu 15" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu16.jpg" alt="Muu 16" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu17.jpg" alt="Muu 17" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu18.jpg" alt="Muu 18" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu19.jpg" alt="Muu 19" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu20.jpg" alt="Muu 20" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu21.jpg" alt="Muu 21" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu22.jpg" alt="Muu 22" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="muu23.jpg" alt="Muu 23" onclick="openLightbox(this)"></div>
     </div>
   </div>
 
   <div id="kohe" class="gallery-category">
     <h3>Kohe olemas</h3>
     <div class="gallery">
-      <img src="kohe1.jpg" alt="Kohe olemas 1" onclick="openLightbox(this)">
-      <img src="kohe2.jpg" alt="Kohe olemas 2" onclick="openLightbox(this)">
+      <div class="image-container"><img src="kohe1.jpg" alt="kohe 1" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe2.jpg" alt="kohe 2" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe3.jpg" alt="kohe 3" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe4.jpg" alt="kohe 4" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe5.jpg" alt="kohe 5" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe6.jpg" alt="kohe 6" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe7.jpg" alt="kohe 7" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe8.jpg" alt="kohe 8" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe9.jpg" alt="kohe 9" onclick="openLightbox(this)"></div>
+      <div class="image-container"><img src="kohe10.jpg" alt="kohe 10" onclick="openLightbox(this)"></div>
     </div>
   </div>
 </section>
 
-<section id="tellimine" style="display:none;">
-  <h2>Tellimine</h2>
-  <p>Kui soovid tellida unikaalset käsitöö eset, võta minuga ühendust e-posti teel aadressil <a href="mailto:anneli@ideelaegas.ee">anneli@ideelaegas.ee</a> või telefoni teel numbril <strong>555-1234</strong>.</p>
-  <p>Tellimused valmivad tavaliselt 7-14 päeva jooksul ning neile lisandub transporditasu sõltuvalt asukohast.</p>
+<!-- Lightbox Modal -->
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+  <span onclick="closeLightbox()" style="position:absolute;top:30px;right:40px;color:#fff;font-size:40px;cursor:pointer;z-index:1001;">&times;</span>
+  
+  <!-- Left arrow -->
+  <span id="lightbox-prev" onclick="prevImage()" style="position:absolute;left:30px;color:#fff;font-size:50px;cursor:pointer;z-index:1001;">&#10094;</span>
+
+  <!-- Right arrow -->
+  <span id="lightbox-next" onclick="nextImage()" style="position:absolute;right:30px;color:#fff;font-size:50px;cursor:pointer;z-index:1001;">&#10095;</span>
+  
+  <img id="lightbox-img" src="" alt="" style="max-width:90vw; max-height:80vh; display:block; margin:auto; box-shadow:0 2px 20px #111;">
+</div>
+
+
+<script>
+let lightboxImages = [];
+let currentLightboxIndex = -1;
+
+// Show/hide sections
+function showSection(sectionId) {
+  document.getElementById('avaleht').style.display = 'none';
+  document.getElementById('tood').style.display = 'none';
+  document.getElementById('tellimine').style.display = 'none';
+  document.getElementById(sectionId).style.display = '';
+  if (sectionId === 'tood') {
+    showGallery('pudelid', document.querySelector('.submenu button'));
+  }
+  window.location.hash = sectionId;
+}
+
+// Gallery switching
+function showGallery(galleryId, btn) {
+  document.querySelectorAll('.gallery-category').forEach(cat => cat.classList.remove('active'));
+  document.getElementById(galleryId).classList.add('active');
+  document.querySelectorAll('.submenu button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+// Open lightbox and prepare image list for navigation
+function openLightbox(img) {
+  const activeCategory = img.closest('.gallery-category');
+  if (activeCategory) {
+    // Only images in current gallery category
+    lightboxImages = Array.from(activeCategory.querySelectorAll('img'));
+  } else {
+    // Fallback: all images in general gallery
+    lightboxImages = Array.from(document.querySelectorAll('.gallery img'));
+  }
+  currentLightboxIndex = lightboxImages.findIndex(i => i.src === img.src);
+  showLightboxImage(currentLightboxIndex);
+
+  var modal = document.getElementById('lightbox-modal');
+  modal.style.display = 'flex';
+}
+
+// Show image by index
+function showLightboxImage(idx) {
+  if (!lightboxImages.length) return;
+  currentLightboxIndex = (idx + lightboxImages.length) % lightboxImages.length;
+  var modalImg = document.getElementById('lightbox-img');
+  modalImg.src = lightboxImages[currentLightboxIndex].src;
+  modalImg.alt = lightboxImages[currentLightboxIndex].alt;
+}
+
+// Next/prev controls
+function nextImage() {
+  showLightboxImage(currentLightboxIndex + 1);
+}
+function prevImage() {
+  showLightboxImage(currentLightboxIndex - 1);
+}
+function closeLightbox() {
+  document.getElementById('lightbox-modal').style.display = 'none';
+}
+
+// Close when clicking on modal background
+document.getElementById('lightbox-modal').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+// Keyboard navigation support
+document.addEventListener('keydown', function(event) {
+  var modal = document.getElementById('lightbox-modal');
+  if (modal.style.display === 'flex') {
+    if (event.key === "ArrowRight") nextImage();
+    if (event.key === "ArrowLeft") prevImage();
+    if (event.key === "Escape") closeLightbox();
+  }
+});
+
+// Show correct section on load (hash)
+window.addEventListener('DOMContentLoaded', () => {
+  const hash = window.location.hash.replace('#', '');
+  if (hash === 'tood' || hash === 'tellimine') {
+    showSection(hash);
+  }
+});
+</script>
+
+<section id="tellimine" class="contact" style="display:none;">
+  <h2>Tellimine / Kontakt</h2>
+  <p>Kui soovid tellida midagi erilist või küsida lisainfot, kirjuta mulle julgelt e-posti:</p>
+  <p>E-post: <a href="mailto:anneli.kivirand.001@mail.ee">anneli.kivirand.001@mail.ee</a></p>
 </section>
 
 <footer>
-  <p>© 2025 Anneli ideelaegas. Kõik õigused kaitstud.</p>
+  <p>&copy; 2025 Anneli ideelaegas. Kõik õigused kaitstud.</p>
 </footer>
-
-<!-- Lightbox container -->
-<div id="lightbox-overlay" onclick="closeLightbox()">
-  <img id="lightbox-img" src="" alt="Suur pilt" />
-</div>
-
-<script>
-  // Näita valitud sektsiooni ja peida teised
-  function showSection(id) {
-    const sections = document.querySelectorAll('section');
-    sections.forEach(sec => sec.style.display = 'none');
-    const selected = document.getElementById(id);
-    if (selected) selected.style.display = 'block';
-
-    // Kui valitud "Tehtud tööd", siis näita esimest galerii kategooriat ja aktiveeri esimene nupp
-    if (id === 'tood') {
-      const firstBtn = document.querySelector('.submenu button');
-      if (firstBtn) {
-        showGallery('pudelid', firstBtn);
-      }
-    }
-  }
-
-  // Näita valitud galerii kategooriat ja aktiveeri vastav nupp
-  function showGallery(category, btn) {
-    const galleries = document.querySelectorAll('.gallery-category');
-    galleries.forEach(g => g.classList.remove('active'));
-
-    const activeGallery = document.getElementById(category);
-    if (activeGallery) activeGallery.classList.add('active');
-
-    const buttons = document.querySelectorAll('.submenu button');
-    buttons.forEach(button => button.classList.remove('active'));
-
-    if (btn) btn.classList.add('active');
-  }
-
-  // Ava lightbox pildile
-  function openLightbox(img) {
-    const lightbox = document.getElementById('lightbox-overlay');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = img.src;
-    lightboxImg.alt = img.alt;
-    lightbox.style.display = 'flex';
-  }
-
-  // Sulge lightbox
-  function closeLightbox() {
-    const lightbox = document.getElementById('lightbox-overlay');
-    lightbox.style.display = 'none';
-  }
-
-  // Alguses näita avalehte
-  document.addEventListener('DOMContentLoaded', () => {
-    showSection('avaleht');
-  });
-</script>
 
 </body>
 </html>
+
+
+
+
+
