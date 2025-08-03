@@ -100,12 +100,29 @@
 <section id="tood">
   <h2>Tehtud tööd</h2>
 
-  <div class="gallery-category">
-    <h3>Pudelid</h3>
-    <div class="gallery">
-      <!-- Lisa siia pudelite pildid -->
-    </div>
+<div class="gallery-category">
+  <h3>Pudelid</h3>
+  <div class="gallery">
+    <div class="image-container"><img src="pudel1.jpg" alt="Pudel 1" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel2.jpg" alt="Pudel 2" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel3.jpg" alt="Pudel 3" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel4.jpg" alt="Pudel 4" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel5.jpg" alt="Pudel 5" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel6.jpg" alt="Pudel 6" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel7.jpg" alt="Pudel 7" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel8.jpg" alt="Pudel 8" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel9.jpg" alt="Pudel 9" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel10.jpg" alt="Pudel 10" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel11.jpg" alt="Pudel 11" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel12.jpg" alt="Pudel 12" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel13.jpg" alt="Pudel 13" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel14.jpg" alt="Pudel 14" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel15.jpg" alt="Pudel 15" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel16.jpg" alt="Pudel 16" onclick="openLightbox(this)"></div>
+    <div class="image-container"><img src="pudel17.jpg" alt="Pudel 17" onclick="openLightbox(this)"></div>
   </div>
+</div>
+
 
 <div class="gallery-category">
   <h3>Šokolaadiümbrised</h3>
@@ -121,7 +138,31 @@
   </div>
 </div>
 
-<!-- Lightbox Modal -->
+
+
+  <div class="gallery-category">
+    <h3>Kaardid</h3>
+    <div class="gallery">
+      <!-- Lisa siia šokolaadi ümbriste pildid -->
+    </div>
+  </div>
+
+  <div class="gallery-category">
+    <h3>Kommipuud</h3>
+    <div class="gallery">
+      <!-- Lisa siia kommipuude pildid -->
+    </div>
+  </div>
+
+  <div class="gallery-category">
+    <h3>Muu</h3>
+    <div class="gallery">
+      <!-- Lisa siia muu käsitöö pildid -->
+    </div>
+  </div>
+</section>
+
+  <!-- Lightbox Modal -->
 <div id="lightbox-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
   <span onclick="closeLightbox()" style="position:absolute;top:30px;right:40px;color:#fff;font-size:40px;cursor:pointer;z-index:1001;">&times;</span>
   <img id="lightbox-img" src="" alt="" style="max-width:90vw; max-height:80vh; display:block; margin:auto; box-shadow:0 2px 20px #111;">
@@ -147,28 +188,6 @@ document.getElementById('lightbox-modal').addEventListener('click', function(e) 
 });
 </script>
 
-  <div class="gallery-category">
-    <h3>Kaardid</h3>
-    <div class="gallery">
-      <!-- Lisa siia šokolaadi ümbriste pildid -->
-    </div>
-  </div>
-
-  <div class="gallery-category">
-    <h3>Kommipuud</h3>
-    <div class="gallery">
-      <!-- Lisa siia kommipuude pildid -->
-    </div>
-  </div>
-
-  <div class="gallery-category">
-    <h3>Muu</h3>
-    <div class="gallery">
-      <!-- Lisa siia muu käsitöö pildid -->
-    </div>
-  </div>
-</section>
-
 <section id="tellimine" class="contact">
   <h2>Tellimine / Kontakt</h2>
   <p>Kui soovid tellida midagi erilist või küsida lisainfot, kirjuta mulle julgelt e-posti:</p>
@@ -181,6 +200,7 @@ document.getElementById('lightbox-modal').addEventListener('click', function(e) 
 
 </body>
 </html>
+
 
 
 
